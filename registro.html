@@ -3,27 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<p>, initial-scale=1.0">
-    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Euphoria</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
+<header>
+    <div class="ancho">
+        <nav id="horizontal_navbar">
+            <div class="logo">
+                <img id="landing_logo" src = "img/logo.jpg">
+            </div> 
+            <p class="titulo"><a href="index.html">EUPHORIA</a></p>
+        </nav>
+    </div>
+</header>
 <body>
+    <div class="wrapper">
+       
+        <form id="form_nuevo_usuario">
+            <label for="fname">Nombre usuario:</label>
+            <input type="text" id="dato_nombre_usuario" name="nombre"><br><br>
+            <label for="lname">Edad:</label>
+            <input type="text" id="dato_edad_usuario" name="edad"><br><br>
+            <label for="lname">Contraseña:</label>
+            <input type="password" id="dato_contrasena" name="contrasena"><br><br>
 
-   
-    <form id="form_nuevo_usuario">
-        <label for="fname">Nombre usuario:</label>
-        <input type="text" id="dato_nombre_usuario" name="nombre"><br><br>
-        <label for="lname">Edad:</label>
-        <input type="text" id="dato_edad_usuario" name="edad"><br><br>
-        <label for="lname">Contraseña:</label>
-        <input type="password" id="dato_contrasena" name="contrasena"><br><br>
+            <button id="enviar_registro"> Enviar
+            </button>
+        </form>
 
-        <button id="enviar_registro"> Enviar
-        </button>
-    </form>
+       <table border=1 align="center" cellpadding=10 cellspacing=5>
+       </table>
 
-
-   <table border=1 align="center" cellpadding=10 cellspacing=5>
-
-   </table>
+      </div>
 </body>
+
+<footer>
+    <div id="seccionRedes">
+    <ion-icon name="logo-instagram" class="redes"></ion-icon>
+    <ion-icon name="logo-facebook" class="redes"></ion-icon>
+    <ion-icon name="logo-twitter" class="redes"></ion-icon>
+    </div>
+</footer>
 </html>
